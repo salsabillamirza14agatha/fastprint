@@ -6,7 +6,7 @@ include 'koneksi.php';
 $id = $_GET['id_produk'];
 
 //menghapus data dari database
-mysqli_query ($koneksi, "delete from mytable where id='$id_produk'");
+mysqli_query ($kon, "delete from mytable where id_produk='$id'");
 
 //mengalihkan halaman kembali ke index.php
 header ("location:tampil.php");
