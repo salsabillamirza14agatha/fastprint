@@ -13,7 +13,7 @@
     <?php
     include 'koneksi.php';
     $id = $_GET['id'] ;
-    $data = mysqli_query($koneksi,"select * from mytable where id='$id_produk'");
+    $data = mysqli_query($kon,"select * from mytable where id_produk='$id'");
     while ($d = mysqli_fetch_array($data)){
         ?>
         <form method="post" action="update.php">
@@ -21,7 +21,7 @@
                 <tr>
                     <td>ID Produk</td>
                     <td>
-                        <input type="hidden" name="id" value="<?php echo $d['id_Produk']; ?>">
+                        <input type="hidden" name="id" value="<?php echo $d['id_produk']; ?>">
                         <input type="text" name="id" value="<?php echo $d['id_produk']; ?>">
                     </td>
                 </tr>
