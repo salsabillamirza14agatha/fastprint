@@ -18,7 +18,7 @@
         </tr>
         <?php
         include 'koneksi.php';
-        $data =mysqli_query ($koneksi,"select * from mytabel");
+        $data =mysqli_query ($koneksi,"select * from mytable");
         while ($d = mysqli_fetch_array($data)){
             ?>
             <tr>
