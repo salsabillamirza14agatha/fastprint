@@ -18,7 +18,7 @@
         </tr>
         <?php
         include 'koneksi.php';
-        $data =mysqli_query ($koneksi,"select * from mytable");
+        $data =mysqli_query ($kon,"select * from mytable");
         while ($d = mysqli_fetch_array($data)){
             ?>
             <tr>
@@ -28,8 +28,8 @@
                 <td><?php echo $d['kategori'] ?></td>
                 <td><?php echo $d['status'] ?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
-                    <a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+                    <a href="edit.php?id=<?php echo $d['id_produk']; ?>">EDIT</a>
+                    <a href="hapus.php?id=<?php echo $d['id_produk']; ?>">HAPUS</a>
                </td>
            </tr>
            <?php
