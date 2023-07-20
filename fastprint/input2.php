@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PKTJ TEGAL</title>
+        <title>Fast Print</title>
     </head>
     <body>
         <h1> FORM TAMBAH PRODUK</h1>
